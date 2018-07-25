@@ -1,0 +1,24 @@
+{
+      "name": "demo",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+            "bootstrap": "^4.1.2",
+            "chart.js": "^2.7.2",
+            "font-awesome": "^4.7.0",
+            "fusioncharts": "^3.12.2",
+            "react": "^16.4.1",
+            "react-body-images": "^1.0.1",
+            "react-chartjs-2": "^2.7.4",
+            "react-dom": "^16.4.1",
+            "react-fusioncharts": "^1.0.5",
+            "react-router-dom": "^4.3.1",
+            "react-scripts": "1.1.4"
+      },
+      "scripts": {
+            "start": "NODE_PATH=./src react-scripts start",
+            "build": "react-scripts build",
+            "test": "react-scripts test --env=jsdom",
+            "eject": "react-scripts eject"
+      }
+}
