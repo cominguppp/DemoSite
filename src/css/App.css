@@ -2,7 +2,6 @@
 
 body {
       background-color: #EEEEEE !important;
-      /* background-image: url(../static/body-bg.jpg); */
       /* Full height */
       height: 100%;
       /* Center and scale the image nicely */
@@ -29,9 +28,13 @@ body {
       }
 }
 
-.top-box {
+/* Comment for 1 container */
+
+/* .top-box {
       height: 360px;
       padding: 10px;
+      clear: both;
+      padding: 0;
 }
 
 .bottom-box {
@@ -39,7 +42,7 @@ body {
       padding: 0 !important;
       clear: both;
       top: -30px;
-}
+} */
 
 .bottom-box, .top-box {
       background-color: #EEEEEE;
@@ -143,16 +146,9 @@ canvas {
       color: white !important;
 }
 
-/* .fa {
-      position: absolute;
-      display: block !important;
-} */
-
 .fa {
       font-size: -webkit-xxx-large !important;
 }
-
-/* a i { font-size: 70px; } */
 
 .fontawesome-containers {
       width: 20%;
@@ -236,14 +232,14 @@ canvas {
 }
 
 .in-out-counter-box {
-      width: 300px !important;
+      width: 350px !important;
 }
 
 .emoji-box {
-      width: 200px !important;
+      width: 250px !important;
 }
 
-.emoji-box > img {
+.emoji-box>img {
       max-width: 80% !important;
       max-height: 80% !important;
 }
@@ -257,7 +253,7 @@ canvas {
       height: 100% !important;
 }
 
-.des-text > span {
+.des-text>span {
       float: right;
 }
 
@@ -289,4 +285,64 @@ canvas {
       .container {
             min-width: 1280px;
       }
+}
+
+/* 2 screen */
+
+.double-tracking-screen-container {
+      position: fixed;
+      width: 100% !important;
+      top: 425px;
+      left: 0;
+      height: 540px;
+}
+
+.double-tracking-screen, .double-tracking-screen>.tracking-screen {
+      width: 960px !important;
+      height: 540px !important;
+      position: absolute;
+}
+
+.double-tracking-screen-container>div:nth-child(2) {
+      margin-left: 50%;
+}
+
+.double-tracking-screen-container>div {
+      transform: scale(0.98);
+}
+
+.double-tracking-screen-top-box {
+      position: fixed !important;
+      width: 100%;
+      left: 0;
+      top: 30px !important;
+      height: 400px;
+}
+
+.bottom-box {
+      height: 720px;
+      padding: 0 !important;
+      clear: both;
+      top: -30px;
+}
+
+.double-tracking-screen-top-box>.app-logo-box {
+      width: 300px !important;
+}
+
+.double-tracking-screen-top-box>.in-out-counter-box {
+      width: 400px !important;
+}
+
+.double-tracking-screen-top-box>.in-out-counter-box>span {
+      transform: translateX(0%) translateY(3%);
+      padding: 20px;
+}
+
+.double-tracking-screen-top-box>.emoji-dashboard-box {
+      width: 400px !important;
+}
+
+.double-tracking-screen-top-box>.emoji-box {
+      width: 300px !important;
 }

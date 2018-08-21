@@ -6,7 +6,6 @@ class AppLogo extends Component {
             return (
                   <div className='app-logo-box align-self-center containers transparent-bg'>
                         <img src={Logo} />
-                        <div class="trick"></div>
                   </div>
             )
       }

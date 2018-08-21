@@ -10,7 +10,6 @@ class EmojiBox extends Component {
             return (
                   <div className='align-self-center emoji-box containers emoji-box'>
                         <img src={Happy} />
-                        <div class="trick"></div>
                   </div>
             )
       }

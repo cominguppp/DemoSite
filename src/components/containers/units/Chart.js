@@ -17,11 +17,12 @@ class Chart extends Component {
       }
 
       render() {
-            console.log()
+            console.log('Inside Chart Data:')
+            console.log(this.state.chartData)
             return (<div className="chart">
                   <Bar data={this.state.chartData} options={{
                               title: {
-                                    display: this.props.displayTitle,
+                                    display: false,
                                     text: '' + this.props.title,
                                     fontSize: 25
                               },
@@ -53,34 +54,11 @@ class Chart extends Component {
                                                 ticks: {
                                                       fontColor: '#FFFFFF'
                                                 },
-                                                barPercentage: 0.4
+                                                barPercentage: 0.5
                                           }
                                     ]
                               }
-                        }}/> {/* <Line data={this.state.chartData} options={{
-                              title: {
-                                    display: this.props.displayTitle,
-                                    text: '' + this.props.title,
-                                    fontSize: 25
-                              },
-                              legend: {
-                                    display: this.props.displayLegend,
-                                    position: this.props.legendPosition
-                              }
                         }}/>
-
-                  <Pie data={this.state.chartData} options={{
-                              title: {
-                                    display: this.props.displayTitle,
-                                    text: ' ' + this.props.title,
-                                    fontSize: 25
-                              },
-                              legend: {
-                                    display: this.props.displayLegend,
-                                    position: this.props.legendPosition
-                              }
-                        }}/> */
-                  }
             </div>)
       }
 }
